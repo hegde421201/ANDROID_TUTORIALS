@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidTutorials</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_list_fragment">Error loading data</string>
+    <string name="hello_detail_fragment">Hello detail fragment</string>
+    <string name="movie_name">Movie Name</string>
+</resources>
