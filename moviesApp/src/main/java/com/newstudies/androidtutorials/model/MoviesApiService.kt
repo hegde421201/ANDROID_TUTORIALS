@@ -26,3 +26,5 @@ class MoviesApiService {
         return api.getMovies(params)
     }
 }
+
+//https://developer.okta.com/blog/2021/05/26/rxjava-android-with-kotlin

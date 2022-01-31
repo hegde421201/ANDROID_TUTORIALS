@@ -22,5 +22,9 @@
         <action
             android:id="@+id/action_movieDetailFragment_to_movieListFragment"
             app:destination="@id/movieListFragment" />
+        <argument
+            android:name="results"
+            app:argType="com.newstudies.androidtutorials.model.Results"
+            app:nullable="true" />
     </fragment>
 </navigation>

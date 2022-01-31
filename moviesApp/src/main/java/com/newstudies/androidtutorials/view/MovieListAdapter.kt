@@ -3,10 +3,10 @@ package com.newstudies.androidtutorials.view
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.newstudies.androidtutorials.R
 import com.newstudies.androidtutorials.model.MovieModel
-import com.newstudies.androidtutorials.utils.getKey
 import com.newstudies.androidtutorials.utils.getProgressDrawable
 import com.newstudies.androidtutorials.utils.getUrl
 import com.newstudies.androidtutorials.utils.loadImage
@@ -36,8 +36,19 @@ class MovieListAdapter(private var movieList: MovieModel?) :
 
       val imageUrl = imageUrlConstant + movieList?.results?.get(position)?.posterImage
 
-      holder.view.imageMoviePortrait2.loadImage(imageUrl,
-                                    getProgressDrawable(holder.view.context),holder.view.context)
+      holder.view.imageMoviePortrait2.loadImage(
+          imageUrl,
+          getProgressDrawable(holder.view.context)
+      )
+
+      holder.view.movieLayout.setOnClickListener {
+
+          var result = movieList?.results?.get(position)
+
+          val action = MovieListFragmentDirections.
+          actionMovieListFragmentToMovieDetailFragment(result)
+          Navigation.findNavController(holder.view).navigate(action)
+      }
     }
 
     override fun getItemCount(): Int = movieList?.results?.size?:0

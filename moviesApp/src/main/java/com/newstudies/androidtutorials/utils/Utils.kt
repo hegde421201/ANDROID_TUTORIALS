@@ -31,7 +31,7 @@ fun getProgressDrawable(context: Context) : CircularProgressDrawable{
        return getMetaDataInfo(applicationContext).metaData["keyValue"].toString()
     }
 
-    fun ImageView.loadImage(uri:String?, progressDrawable: CircularProgressDrawable,context: Context){
+    fun ImageView.loadImage(uri: String?, progressDrawable: CircularProgressDrawable){
         val options = RequestOptions().placeholder(progressDrawable)
             .error(R.mipmap.ic_launcher_round)
 
