@@ -27,7 +27,7 @@ This repository is tailor made for students or professionals who are willing to 
 ### :man_technologist: About Me :
 I am a Senior Android Engineer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> from India.
 
-- :telescope: I’m working as a Senior Software Engineer and contributing to frontend and backend for building Android applications.
+- :telescope: I’m working as a Senior Software Engineer in Jio Platforms and contributing to frontend and backend for building Android applications.
 
 - :seedling: Exploring Technical Content Writing.
 
