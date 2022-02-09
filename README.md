@@ -16,3 +16,7 @@ This repository is tailor made for students or professionals who are willing to 
   Hi there, How are you? I hope you are doing great!
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
 </h1>
+
+<div align="center">
+  <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600" height="300"/>
+</div>
