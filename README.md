@@ -25,3 +25,4 @@ This repository is tailor made for students or professionals who are willing to 
 
 
 ### :man_technologist: About Me :
+I am a Senior Android Engineer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> from India.
