@@ -26,3 +26,12 @@ This repository is tailor made for students or professionals who are willing to 
 
 ### :man_technologist: About Me :
 I am a Senior Android Engineer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> from India.
+
+- :telescope: I’m working as a Senior Software Engineer and contributing to frontend and backend for building Android applications.
+
+- :seedling: Exploring Technical Content Writing.
+
+- :zap: In my free time, I solve problems on leetcode and coding ninjas.
+
+- :mailbox:How to reach me: [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/ganesh-hegde-4569936)
+
