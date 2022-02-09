@@ -20,3 +20,8 @@ This repository is tailor made for students or professionals who are willing to 
 <div align="center">
   <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600" height="300"/>
 </div>
+
+---
+
+
+### :man_technologist: About Me :
