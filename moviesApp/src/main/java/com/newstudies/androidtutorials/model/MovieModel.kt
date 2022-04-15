@@ -8,6 +8,10 @@ import java.sql.Date
 import java.util.*
 import kotlin.collections.ArrayList
 
+data class MoviePalette(var color:Int)
+
+
+
 //
 data class MovieModel(
 

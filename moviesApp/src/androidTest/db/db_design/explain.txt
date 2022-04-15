@@ -1,0 +1,73 @@
+DATABASE DESIGN
+------------------
+1.Requirement Analysis
+
+The first step consists of understanding what data is to be stored in the database.
+Then we need to analyse the applications that can be built using this data,the most frequent operations subject to performance
+requirements. We need to understand what the user wants from the database. This is basically a process that involves discussions
+with the stakeholders. Changes in existing applications using the database or impact on the data due to the new application
+requirements are discussed.
+
+
+2.Conceptual Database Design
+
+Th information gathered in the requirement analysis step is to develop a high-level description of the data to be stored in the
+database along with constraints, if any. The ER model is a widely used tool for this purpose. ER modeling is a high-level or semantic data
+model used in database design. The goal is to create a simple description of the data that closely matches how the users and developers think of the
+data, people and processes that will impact the data.
+This design must also facilitate a simple translation to a data model supported by commercial database system. This data model is also called as the
+relational model.
+
+3.Logical Database Design
+
+Here we must choose a DBMS to implement our design and convert the conceptual database design into a database schema in the data model of the DBMS.
+Thus the task in the logical design step is to convert the ER schema into a relational database schema.
+
+4.Schema Refinement
+
+The fourth step in the database design is to analyse the collection of relations in the relational database schema to identify potential issues and to refine it.
+Normalization is an important concept that can help to refine these relations.
+
+5.Physical Database Design
+
+Here we consider expected payloads that our database must support and further refine the database design to ensure that it meets the desired performance
+criteria.This step usually involves building indexes on some tables and clustering some tables. It can also involve redesign of the database schema obtained
+in steps 3 and 4 above.
+
+6.Application and Security Design
+
+In this step we must consider the other aspects of software that involves DBMS. The roles of each entity involved in every process of the workflow must be analysed and
+for each role we must identify parts of the database that must be accessible and non-accessible. The access rules must be enforced in this step.
+
+Apart from the above steps, there might be a database tuning phase where all the six steps are interleaved requiring a repetition of the design.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Entities,Attributes and Entity Sets
+--------------------------------------
+
+An entity is an object in the real world that is distinguishable from other objects.
+Example: Manager in the retail store, address of the bank employee.
+A collection of similar entities is called an entity set.
+Two or more entity sets can be combined to form a larger entity set.
+For example, employees of the retail store and the employees of the operations team can be combined to form an entity set of employees that represent
+a small-scale retail business company.
+
+An entity is often described using a set of attributes. An entities in a given entity set have the same attributes. The more the number of attributes we have, the
+greater is the detail available for us to represent information about the entity.
+
+Please refer to the figure 2.1 (2_1.png)
+It describes the entity Employee as a rectangle having three attributes - Aadhar (a 12-digit unique random number issued to the residents
+of India by the authority UIDAI), name (full name of the employee) and dob (date of birth).
+Each employee in the employee entity set will have these three attributes. Each attribute is represented by an oval.
+We could also have included gender as the fourth attribute but we have ignored it as of now.
+
+For each attribute associated with an entity set, we must identify a domain of possible values. For example, the attribute Aadhar is a 12-digit unique string of characters -
+a mix of English uppercase alphabets and digits. The attribute name of the employee can be defined as a set of 25-character strings.
+For each entity we choose a key. A key is a minimal set of attributes whose values uniquely identify an entity in a set. Each attribute in the primary key is underlined.
+Here Aadhar is the key.
+
+
+
+
+

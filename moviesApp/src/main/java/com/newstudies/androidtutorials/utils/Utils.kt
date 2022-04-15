@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
 import android.widget.ImageView
+import androidx.databinding.BindingAdapter
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -41,6 +42,11 @@ fun getProgressDrawable(context: Context) : CircularProgressDrawable{
             .into(this)
     }
 
+    @BindingAdapter("android:imageUrl")
+    fun loadImage(view:ImageView, url:String?){
+        val  uri = getUrl(view.context) + url
+        view.loadImage(uri, getProgressDrawable(view.context))
+    }
 
 
 

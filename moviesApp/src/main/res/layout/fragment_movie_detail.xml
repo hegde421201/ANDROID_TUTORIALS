@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="results"
+            type="com.newstudies.androidtutorials.model.Results" />
+        
+        <variable
+            name="palette"
+            type="com.newstudies.androidtutorials.model.MoviePalette" />
+    </data>
+
+<LinearLayout
+    android:background="@{palette.color}"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -12,11 +26,11 @@
         android:minHeight="200dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/moviePoster"
+        android:imageUrl="@{results.posterImage}"
         />
 
     <TextView
-        android:text="@string/app_name"
+        android:text="@{results.title}"
         android:layout_margin="@dimen/dp_04"
         style="@style/Title"
         android:id="@+id/movieTitle"
@@ -26,8 +40,10 @@
     <TextView
         android:layout_margin="@dimen/dp_04"
         style="@style/Title"
-        android:text="@string/original_language"
+        android:text="@{results.language}"
         android:id="@+id/movieLanguage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </LinearLayout>
+</layout>
+
