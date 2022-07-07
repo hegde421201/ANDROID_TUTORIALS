@@ -43,3 +43,10 @@ I am a Senior Android Engineer <img src="https://media.giphy.com/media/WUlplcMpO
   <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL"  alt="MySQL" width="40" height="40"/>&nbsp;
 </div>
+
+
+### :man_technologist: Projects that I have developed for learning and education purposes :
+
+This is a [Movies application](https://github.com/hegde421201/ANDROID_TUTORIALS/tree/main/moviesApp) developed using Kotlin.
+
+
